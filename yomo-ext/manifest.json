@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Yomo AI",
+  "version": "1.0",
+  "description": "Meeting Assistant",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [{ "matches": ["<all_urls>"], "js": ["content.js"] }]
+}
